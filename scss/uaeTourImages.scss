@@ -1,0 +1,74 @@
+.uaePackageHero {
+  width: 981px;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/tour/tour-09.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 49px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .phTitle {
+    color: white;
+    font-size: 80px;
+    font-family: Proxima;
+    height: 98px;
+    margin: 30px;
+  }
+  .vary {
+    color: white;
+    font-size: 30px;
+    font-family: Proxima;
+    width: 100%;
+    text-align: right;
+  }
+}
+
+.uaeTourImages {
+  width: 981px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 40px;
+  .uaeImage1 {
+    @include tour-image-format;
+    background-image: url(../images/tour/tour-uae/uae-tour-01.jpg);
+  }
+  .uaeImage2 {
+    @include tour-image-format;
+    background-image: url(../images/tour/tour-uae/uae-tour-02.jpg);
+  }
+  .uaeImage3 {
+    @include tour-image-format;
+    background-image: url(../images/tour/tour-uae/uae-tour-03.jpg);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .uaeTourImages {
+    width: 90%;
+    flex-direction: column;
+    .uaeImage1 {
+      height: 250px;
+      margin-bottom: 20px;
+    }
+    .uaeImage2 {
+      height: 250px;
+      margin-bottom: 20px;
+    }
+    .uaeImage3 {
+      height: 250px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .uaePackageHero {
+    width: 90%;
+  }
+}

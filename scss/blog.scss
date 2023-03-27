@@ -1,0 +1,100 @@
+.blog {
+  margin: auto;
+  margin-top: 60px;
+  width: 980px;
+  .blogTitle {
+    text-transform: uppercase;
+    font-family: Proxima;
+    width: 106px;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+  }
+  .post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      margin-bottom: 92px;
+      height: 376px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      .date-box {
+        background-color: $site-blue;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        .dateDay {
+          color: white;
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          font-size: 22px;
+          font-weight: bold;
+          margin-top: 5px;
+        }
+        .dateMonth {
+          color: white;
+          text-transform: uppercase;
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          font-size: 12px;
+          font-weight: lighter;
+          margin-bottom: 5px;
+        }
+      }
+      .empty {
+        width: 60px;
+        height: 60px;
+      }
+    }
+    .right {
+      .bloghero {
+        width: 900px;
+        height: 259px;
+        background-image: url(../images/blog.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+      }
+      .blogName {
+        font-size: 15px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        margin-bottom: 11px;
+      }
+      .blogWords {
+        color: $site-blue;
+        width: 380px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 13px;
+        margin-bottom: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .blog {
+    width: 95%;
+    .post {
+      .left {
+        width: 60px;
+        margin-right: 10px;
+      }
+      .right {
+        width: 90%;
+        .bloghero {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

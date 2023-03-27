@@ -1,0 +1,76 @@
+.clientQuotes {
+  width: 980px;
+  margin: auto;
+  margin-top: 101px;
+  margin-bottom: 179px;
+  .quoteTitle {
+    width: 255px;
+    border-bottom: solid black 2px;
+    font-family: Proxima;
+    font-size: 40px;
+    letter-spacing: 6px;
+  }
+  .quote {
+    height: 150px;
+    width: 676px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 37px;
+    .clientImage1 {
+      height: 100%;
+      width: 260px;
+      background-image: url(../images/about-client-01.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .clientImage2 {
+      height: 100%;
+      width: 260px;
+      background-image: url(../images/about-client-02.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .quoteInfo {
+      height: 100%;
+      width: 395px;
+      .quotation {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 16px;
+        font-style: italic;
+        letter-spacing: 2px;
+        margin-bottom: 24px;
+      }
+      .clientName {
+        font-family: Proxima;
+        font-size: 20px;
+        color: $site-blue;
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .clientQuotes {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 179px;
+    width: 90%;
+    .quoteTitle {
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    .quote {
+      margin: auto;
+      height: 300px;
+      flex-direction: column;
+      .quoteInfo {
+        margin-top: 20px;
+      }
+    }
+  }
+}

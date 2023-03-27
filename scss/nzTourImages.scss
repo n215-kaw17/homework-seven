@@ -1,0 +1,74 @@
+.nzPackageHero {
+  width: 981px;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/tour/tour-04.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 49px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .phTitle {
+    color: white;
+    font-size: 80px;
+    font-family: Proxima;
+    height: 98px;
+    margin: 30px;
+  }
+  .vary {
+    color: white;
+    font-size: 30px;
+    font-family: Proxima;
+    width: 100%;
+    text-align: right;
+  }
+}
+
+.nzTourImages {
+  width: 981px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 40px;
+  .nzImage1 {
+    @include tour-image-format;
+    background-image: url(../images/tour/tour-nz/nz-tour-01.jpg);
+  }
+  .nzImage2 {
+    @include tour-image-format;
+    background-image: url(../images/tour/tour-nz/nz-tour-02.jpg);
+  }
+  .nzImage3 {
+    @include tour-image-format;
+    background-image: url(../images/tour/tour-nz/nz-tour-03.jpg);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nzTourImages {
+    width: 90%;
+    flex-direction: column;
+    .nzImage1 {
+      height: 250px;
+      margin-bottom: 20px;
+    }
+    .nzImage2 {
+      height: 250px;
+      margin-bottom: 20px;
+    }
+    .nzImage3 {
+      height: 250px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nzPackageHero {
+    width: 90%;
+  }
+}

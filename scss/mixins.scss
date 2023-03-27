@@ -1,0 +1,19 @@
+// @mixin clientPhoto($bg: background-image: url(../images/about-client-01.jpg)) {
+//  background-image: $bg;}
+// I have no clue why I can't set the variable thing to background-image. Changing the image was all I really needed mixins for so I guess I just have to do them seperately. Whatever.
+
+@mixin tour-banner-format {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: $tour-banner-height;
+  width: $tour-banner-width;
+}
+
+@mixin tour-image-format {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 298px;
+  height: 347px;
+}

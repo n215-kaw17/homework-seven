@@ -1,0 +1,27 @@
+.toursHero {
+  width: 981px;
+  height: 200px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/tour/tours-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  .tourTitle {
+    color: white;
+    font-family: Proxima;
+    font-size: 60px;
+    letter-spacing: 5px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .toursHero {
+    width: 90%;
+  }
+}

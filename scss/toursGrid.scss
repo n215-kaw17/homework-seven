@@ -1,0 +1,121 @@
+.toursGrid {
+  min-height: 40px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  width: 981px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  .threeTours {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 55px;
+    height: 304px;
+  }
+
+  .israelTour {
+    @include tour-banner-format;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-01.jpg);
+  }
+  .usaTour {
+    @include tour-banner-format;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-02.jpg);
+  }
+  .ausTour {
+    @include tour-banner-format;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-03.jpg);
+  }
+
+  .nzTour {
+    @include tour-banner-format;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-04.jpg);
+  }
+  .franceTour {
+    @include tour-banner-format;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-05.jpg);
+  }
+  .egyptTour {
+    @include tour-banner-format;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-06.jpg);
+  }
+
+  .japTour {
+    @include tour-banner-format;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-07.jpg);
+  }
+  .canTour {
+    @include tour-banner-format;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-08.jpg);
+  }
+  .uaeTour {
+    @include tour-banner-format;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/tour/tour-09.jpg);
+  }
+
+  .tourTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 47px;
+    min-width: 10px;
+    height: 73px;
+    font-family: Proxima;
+    color: $site-white;
+    font-size: 60px;
+  }
+  .tourPrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 56px;
+    min-width: 10px;
+    height: 37px;
+    text-transform: uppercase;
+    font-family: Proxima;
+    font-size: 30px;
+    color: $site-white;
+  }
+  .learnMore {
+    margin: auto;
+    background-color: $site-blue;
+    width: 133px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    a {
+      text-decoration: none;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: $site-white;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .toursGrid {
+    min-height: 980px;
+    width: 90%;
+    .threeTours {
+      flex-direction: column;
+      min-height: 1022px;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}

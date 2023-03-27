@@ -1,0 +1,118 @@
+.darkNavHolder {
+  width: 100%;
+  nav {
+    width: $site-nav-width;
+    height: $site-nav-height;
+    margin: 0 auto;
+    border-bottom: solid $site-black 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navLogo {
+      width: 92px;
+      height: 42px;
+    }
+    .navLinksDark {
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      .lHome {
+        height: 100%;
+        width: 59px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .lAbout {
+        height: 100%;
+        width: 82px;
+        border-left: solid $site-blue 2px;
+        border-right: solid $site-blue 2px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .lTours {
+        height: 100%;
+        width: 77px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .lOffers {
+        height: 100%;
+        width: 138px;
+        border-left: solid $site-blue 2px;
+        border-right: solid $site-blue 2px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .lBlog {
+        height: 100%;
+        width: 71px;
+        border-right: solid $site-blue 2px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .lContact {
+        height: 100%;
+        width: 73px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      a {
+        font-size: 15px;
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 681px) {
+  .darkNavHolder {
+    width: 100%;
+    nav {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .darkNavHolder {
+    width: 100%;
+    nav {
+      width: 90%;
+      .navLogo {
+        display: none;
+      }
+      .navLinksDark {
+        width: 100%;
+        .lHome {
+          width: 49px;
+        }
+        .lAbout {
+          width: 72px;
+        }
+        .lTours {
+          width: 67px;
+        }
+        .lOffers {
+          width: 128px;
+        }
+        .lBlog {
+          width: 61px;
+        }
+        .lContact {
+          width: 73px;
+        }
+      }
+    }
+  }
+}

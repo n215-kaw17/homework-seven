@@ -1,0 +1,50 @@
+.dayHolder {
+  width: 981px;
+  margin: auto;
+  margin-top: 29px;
+  margin-bottom: 100px;
+  .day {
+    .dayTitle {
+      font-family: Proxima;
+      font-size: 60px;
+      height: 73px;
+      width: 171px;
+      border-bottom: solid black 2px;
+      letter-spacing: 5.5px;
+      margin-bottom: 37px;
+    }
+    .dayInfo {
+      font-size: 16px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      letter-spacing: 3.2px;
+      width: 100%;
+      margin-bottom: 80px;
+    }
+  }
+  .bookButton {
+    margin: auto;
+    width: 133px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: $site-blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 15px;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .dayHolder {
+    width: 90%;
+  }
+}

@@ -1,0 +1,114 @@
+.specialContent {
+  width: 980px;
+  margin: auto;
+  margin-top: 59px;
+  margin-bottom: 40px;
+  .specialTitle {
+    height: 44px;
+    width: 199px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: Proxima;
+    border-bottom: 2px solid #000000;
+    letter-spacing: 3px;
+    white-space: nowrap;
+  }
+  .offerContainer {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .specialOffer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      .offerImage {
+        width: 199px;
+        height: 287px;
+        background-image: url(../images/special-offer-01.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 10px;
+      }
+      .offerImage2 {
+        width: 199px;
+        height: 287px;
+        background-image: url(../images/special-offer-02.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 10px;
+      }
+      .offerAbout {
+        height: 287px;
+        .offerNameDiscount {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 21px;
+          .offerName {
+            width: 196px;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-family: Proxima;
+            border-bottom: 2px solid #000000;
+            letter-spacing: 3px;
+            white-space: nowrap;
+          }
+          .offerName2 {
+            width: 214px;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-family: Proxima;
+            border-bottom: 2px solid #000000;
+            letter-spacing: 3px;
+            white-space: nowrap;
+          }
+          .offerDiscount {
+            color: #ff7d38;
+            font-family: Proxima;
+            font-size: 20px;
+            margin-right: 32px;
+          }
+          .offerDiscount2 {
+            color: #ff7d38;
+            font-family: Proxima;
+            font-size: 20px;
+            margin-right: 14px;
+          }
+        }
+        .offerDescriber {
+          width: 310px;
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          font-size: 16px;
+          font-weight: lighter;
+          letter-spacing: 2px;
+        }
+        .offerButton {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          text-transform: uppercase;
+          width: 133px;
+          height: 40px;
+          background-color: $site-blue;
+          border-radius: 30px;
+          color: $site-white;
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          font-size: 15px;
+          margin-top: 58px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .specialContent {
+    width: 90%;
+  }
+}

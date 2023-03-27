@@ -1,0 +1,39 @@
+.isTourImages {
+  width: 981px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 40px;
+  .isImage1 {
+    @include tour-image-format;
+    background-image: url(../images/tour/tour-israel/israel-tour-01.jpg);
+  }
+  .isImage2 {
+    @include tour-image-format;
+    background-image: url(../images/tour/tour-israel/israel-tour-02.jpg);
+  }
+  .isImage3 {
+    @include tour-image-format;
+    background-image: url(../images/tour/tour-israel/israel-tour-03.jpg);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .isTourImages {
+    width: 90%;
+    flex-direction: column;
+    .isImage1 {
+      height: 250px;
+      margin-bottom: 20px;
+    }
+    .isImage2 {
+      height: 250px;
+      margin-bottom: 20px;
+    }
+    .isImage3 {
+      height: 250px;
+      margin-bottom: 20px;
+    }
+  }
+}

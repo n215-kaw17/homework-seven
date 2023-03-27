@@ -1,0 +1,74 @@
+.jpPackageHero {
+  width: 981px;
+  height: 413px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/tour/tour-07.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 49px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .phTitle {
+    color: white;
+    font-size: 80px;
+    font-family: Proxima;
+    height: 98px;
+    margin: 30px;
+  }
+  .vary {
+    color: white;
+    font-size: 30px;
+    font-family: Proxima;
+    width: 100%;
+    text-align: right;
+  }
+}
+
+.jpTourImages {
+  width: 981px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 40px;
+  .jpImage1 {
+    @include tour-image-format;
+    background-image: url(../images/tour/tour-japan/japan-tour-01.jpg);
+  }
+  .jpImage2 {
+    @include tour-image-format;
+    background-image: url(../images/tour/tour-japan/japan-tour-02.jpg);
+  }
+  .jpImage3 {
+    @include tour-image-format;
+    background-image: url(../images/tour/tour-japan/japan-tour-03.jpg);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .jpTourImages {
+    width: 90%;
+    flex-direction: column;
+    .jpImage1 {
+      height: 250px;
+      margin-bottom: 20px;
+    }
+    .jpImage2 {
+      height: 250px;
+      margin-bottom: 20px;
+    }
+    .jpImage3 {
+      height: 250px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .jpPackageHero {
+    width: 90%;
+  }
+}
